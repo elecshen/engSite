@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Булочкoff - Уникальные булочки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Булочкoff</h1>
+        <h2>Неповторимые булочки, которые покорят ваше сердце!</h2>
+    </header>
+
+    <section class="showcase">
+        <h2>Наши булочки</h2>
+        <div class="card-container">
+            <!-- Карточки булочек -->
+            <div class="card" onclick="openPopup('Булочка с манго', 'Эта булочка с начинкой из спелого манго подарит вам тропический рай в каждом укусе! Нежное тесто, сладкая начинка и легкий аромат кокоса.')" >
+                <h3>Булочка с манго</h3>
+                <img src="https://avatars.mds.yandex.net/i?id=7be6c407acff1fb68cd2d81286d37d8c_l-4885011-images-thumbs&n=13" alt="Булочка с манго">
+                <p>Цена: 150 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с лавандой', 'Эта булочка с лавандой и медом — это не просто десерт, это целая симфония вкусов, которая перенесет вас в цветущий сад!')">
+                <h3>Булочка с лавандой</h3>
+                <img src="https://grandgames.net/puzzle/f1200/lavanda_i_vipechka.jpg" alt="Булочка с лавандой">
+                <p>Цена: 180 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с черникой', 'Сочная черника в сочетании с мягким тестом создаёт идеальный баланс сладости и кислинки. Каждый укус — это праздник!')">
+                <h3>Булочка с черникой</h3>
+                <img src="https://avatars.mds.yandex.net/i?id=4f5210570f46d7031a2e6c0199d4fef8_l-5130185-images-thumbs&n=13" alt="Булочка с черникой">
+                <p>Цена: 160 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с фисташками', 'Эта булочка с фисташками и кремом — это настоящий деликатес для гурманов! Нежный вкус и хрустящие орехи создают идеальное сочетание.')">
+                <h3>Булочка с фисташками</h3>
+                <img src="https://avatars.mds.yandex.net/get-mpic/7179065/img_id4593951090448164289.jpeg/orig" alt="Булочка с фисташками">
+                <p>Цена: 200 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с шоколадом', 'Шоколадная булочка, наполненная горячим шоколадом, — это мечта каждого сладкоежки! Нежное тесто и богатый вкус.')">
+                <h3>Булочка с шоколадом</h3>
+                <img src="https://i.pinimg.com/736x/e6/f5/87/e6f5874608be5d6fee0444f4b81fe837.jpg" alt="Булочка с шоколадом">
+                <p>Цена: 170 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с апельсином', 'Эта булочка с начинкой из апельсинового крема подарит вам заряд бодрости и хорошего настроения на весь день!')">
+                <h3>Булочка с апельсином</h3>
+                <img src="https://www.zastavki.com/pictures/originals/2018Food___Bread_rolls_croissants_Appetizing_fresh_rolls_with_oranges_125615_.jpg" alt="Булочка с апельсином">
+                <p>Цена: 160 руб.</p>
+            </div>
+            <div class="card" onclick="openPopup('Булочка с корицей', 'Классическая булочка с корицей, которая согреет вас в холодный день. Нежное тесто и ароматная корица создают уютную атмосферу.')">
+                <h3>Булочка с корицей</h3>
+                <img src="https://i.pinimg.com/originals/8b/72/84/8b72845575c7d67f2afef70bb7e49d7d.jpg" alt="Булочка с корицей">
+                <p>Цена: 140 руб.</p>
+            </div>
+        <div class="card" onclick="openPopup('Булочка с малиной', 'Сочная малина в сочетании с мягким тестом — это идеальный десерт для летнего дня!')">
+            <h3>Булочка с малиной</h3>
+            <img src="https://avatars.mds.yandex.net/i?id=b9baf7f1a12f98d5a4fc29331b2bf00c_l-3924502-images-thumbs&n=13" alt="Булочка с корицей">
+                <p>Цена: 140 руб.</p>
+        </div>
+       
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h3 id="popup-title"></h3>
+                <p id="popup-description"></p>
+            </div>
+        </div>
+    </section>
+    <section class="promotions">
+        <h2>Акции месяца и новости</h2>
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-card">
+                    <h3>Скидка 20% на все булочки!</h3>
+                    <p>Только в этом месяце! Не упустите возможность попробовать наши уникальные булочки по сниженной цене.</p>
+                </div>
+                <div class="carousel-card">
+                    <h3>Новая булочка с манго!</h3>
+                    <p>Попробуйте нашу новую булочку с начинкой из манго. Это настоящий тропический рай!</p>
+                </div>
+                <div class="carousel-card">
+                    <h3>Бесплатная доставка!</h3>
+                    <p>Закажите на сумму от 1000 рублей и получите бесплатную доставку по городу!</p>
+                </div>
+                <div class="carousel-card">
+                    <h3>Счастливые часы!</h3>
+                    <p>Каждый день с 15:00 до 17:00 - скидка 10% на все булочки!</p>
+                </div>
+                <div class="carousel-card">
+                    <h3>Новая коллекция!</h3>
+                    <p>Мы представляем новую коллекцию булочек с необычными начинками. Не пропустите!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: info@bulockoff.ru</p>
+            <p>Адрес: г. Москва, ул. Булочная, д. 1</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Булочкoff. Все права защищены.</p>
+        </div>
+    </footer>
+    
+
+
+<script>
+    function openPopup(title, description) {
+        document.getElementById('popup-title').innerText = title;
+        document.getElementById('popup-description').innerText = description;
+        document.getElementById('popup').style.display = 'flex'; 
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none'; 
+    }
+</script>
