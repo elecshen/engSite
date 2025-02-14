@@ -1,119 +1,121 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Булочкoff - Уникальные булочки</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Modeling and Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .definition {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Булочкoff</h1>
-        <h2>Неповторимые булочки, которые покорят ваше сердце!</h2>
+        <h1>Modeling and Simulation</h1>
+        <p>Basic Concepts and Classification of Models</p>
     </header>
+    <nav>
+        <a href="#section1">Basic Concepts</a>
+        <a href="#section2">Classification of Models</a>
+        <a href="#section3">Model Development Stages</a>
+    </nav>
 
-    <section class="showcase">
-        <h2>Наши булочки</h2>
-        <div class="card-container">
-            <!-- Карточки булочек -->
-            <div class="card" onclick="openPopup('Булочка с манго', 'Эта булочка с начинкой из спелого манго подарит вам тропический рай в каждом укусе! Нежное тесто, сладкая начинка и легкий аромат кокоса.')" >
-                <h3>Булочка с манго</h3>
-                <img src="https://avatars.mds.yandex.net/i?id=7be6c407acff1fb68cd2d81286d37d8c_l-4885011-images-thumbs&n=13" alt="Булочка с манго">
-                <p>Цена: 150 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с лавандой', 'Эта булочка с лавандой и медом — это не просто десерт, это целая симфония вкусов, которая перенесет вас в цветущий сад!')">
-                <h3>Булочка с лавандой</h3>
-                <img src="https://grandgames.net/puzzle/f1200/lavanda_i_vipechka.jpg" alt="Булочка с лавандой">
-                <p>Цена: 180 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с черникой', 'Сочная черника в сочетании с мягким тестом создаёт идеальный баланс сладости и кислинки. Каждый укус — это праздник!')">
-                <h3>Булочка с черникой</h3>
-                <img src="https://avatars.mds.yandex.net/i?id=4f5210570f46d7031a2e6c0199d4fef8_l-5130185-images-thumbs&n=13" alt="Булочка с черникой">
-                <p>Цена: 160 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с фисташками', 'Эта булочка с фисташками и кремом — это настоящий деликатес для гурманов! Нежный вкус и хрустящие орехи создают идеальное сочетание.')">
-                <h3>Булочка с фисташками</h3>
-                <img src="https://avatars.mds.yandex.net/get-mpic/7179065/img_id4593951090448164289.jpeg/orig" alt="Булочка с фисташками">
-                <p>Цена: 200 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с шоколадом', 'Шоколадная булочка, наполненная горячим шоколадом, — это мечта каждого сладкоежки! Нежное тесто и богатый вкус.')">
-                <h3>Булочка с шоколадом</h3>
-                <img src="https://i.pinimg.com/736x/e6/f5/87/e6f5874608be5d6fee0444f4b81fe837.jpg" alt="Булочка с шоколадом">
-                <p>Цена: 170 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с апельсином', 'Эта булочка с начинкой из апельсинового крема подарит вам заряд бодрости и хорошего настроения на весь день!')">
-                <h3>Булочка с апельсином</h3>
-                <img src="https://www.zastavki.com/pictures/originals/2018Food___Bread_rolls_croissants_Appetizing_fresh_rolls_with_oranges_125615_.jpg" alt="Булочка с апельсином">
-                <p>Цена: 160 руб.</p>
-            </div>
-            <div class="card" onclick="openPopup('Булочка с корицей', 'Классическая булочка с корицей, которая согреет вас в холодный день. Нежное тесто и ароматная корица создают уютную атмосферу.')">
-                <h3>Булочка с корицей</h3>
-                <img src="https://i.pinimg.com/originals/8b/72/84/8b72845575c7d67f2afef70bb7e49d7d.jpg" alt="Булочка с корицей">
-                <p>Цена: 140 руб.</p>
-            </div>
-        <div class="card" onclick="openPopup('Булочка с малиной', 'Сочная малина в сочетании с мягким тестом — это идеальный десерт для летнего дня!')">
-            <h3>Булочка с малиной</h3>
-            <img src="https://avatars.mds.yandex.net/i?id=b9baf7f1a12f98d5a4fc29331b2bf00c_l-3924502-images-thumbs&n=13" alt="Булочка с корицей">
-                <p>Цена: 140 руб.</p>
-        </div>
-       
-        </div>
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup()">&times;</span>
-                <h3 id="popup-title"></h3>
-                <p id="popup-description"></p>
-            </div>
-        </div>
+    <section id="section1">
+        <h2>1. Basic Concepts of Modeling Theory</h2>
+        <p><span class="definition">Model</span>: An object or description of an object/system for substitution under certain conditions.</p>
+        <p><span class="definition">Modeling</span>: The process of building, studying, and applying models to study objects.</p>
+        <p>A model must replicate the properties of the original object as fully as possible while being simpler and more convenient for study.</p>
+        <p><span class="definition">Adequacy</span>: The degree of conformity of results obtained from the developed model to experimental data or test tasks.</p>
+        <p>Properties of a model include finitude, simplicity, approximateness, adequacy, and informativeness.</p>
     </section>
-    <section class="promotions">
-        <h2>Акции месяца и новости</h2>
-        <div class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-card">
-                    <h3>Скидка 20% на все булочки!</h3>
-                    <p>Только в этом месяце! Не упустите возможность попробовать наши уникальные булочки по сниженной цене.</p>
-                </div>
-                <div class="carousel-card">
-                    <h3>Новая булочка с манго!</h3>
-                    <p>Попробуйте нашу новую булочку с начинкой из манго. Это настоящий тропический рай!</p>
-                </div>
-                <div class="carousel-card">
-                    <h3>Бесплатная доставка!</h3>
-                    <p>Закажите на сумму от 1000 рублей и получите бесплатную доставку по городу!</p>
-                </div>
-                <div class="carousel-card">
-                    <h3>Счастливые часы!</h3>
-                    <p>Каждый день с 15:00 до 17:00 - скидка 10% на все булочки!</p>
-                </div>
-                <div class="carousel-card">
-                    <h3>Новая коллекция!</h3>
-                    <p>Мы представляем новую коллекцию булочек с необычными начинками. Не пропустите!</p>
-                </div>
-            </div>
-        </div>
+
+    <section id="section2">
+        <h2>2. Classification of Models</h2>
+        <h3>2.1. Classification by Degree of Abstraction from Original</h3>
+        <img src="fig1_1.png" alt="Fig. 1.1 - Scheme of model classification by degree of abstraction">
+        <p>Models are divided into material (physical) and ideal:</p>
+        <ul>
+            <li><span class="definition">Material Models</span>: Full-scale, quasi full-scale, scale, and analog models.</li>
+            <li><span class="definition">Ideal Models</span>: Intuitive and symbolic models.</li>
+        </ul>
+        <p>Symbolic models include linguistic, visual, graphical, and mathematical models.</p>
+
+        <h3>2.2. Classification by Degree of Stability</h3>
+        <p><span class="definition">Stable Systems</span>: Return to their original state after disturbances.</p>
+        <p><span class="definition">Unstable Systems</span>: Disturbances intensify over time.</p>
+
+        <h3>2.3. Classification by Relation to External Factors</h3>
+        <p><span class="definition">Closed Models</span>: Function independently of external variables.</p>
+        <p><span class="definition">Open Models</span>: Connected to external variables.</p>
+
+        <h3>2.4. Classification by Relation to Time</h3>
+        <img src="fig1_10.png" alt="Fig. 1.10 - Scheme of mathematical model classification by relation to time">
+        <p>Models can be continuous or discrete, static or dynamic.</p>
+        <p><span class="definition">Static Models</span>: Do not include the time parameter.</p>
+        <p><span class="definition">Dynamic Models</span>: Reflect a system in time.</p>
     </section>
-    <footer>
-        <div class="footer-content">
-            <p>Телефон: +7 (123) 456-78-90</p>
-            <p>Email: info@bulockoff.ru</p>
-            <p>Адрес: г. Москва, ул. Булочная, д. 1</p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Булочкoff. Все права защищены.</p>
-        </div>
-    </footer>
-    
 
+    <section id="section3">
+        <h2>3. Model Development Stages</h2>
+        <img src="fig1_11.png" alt="Fig. 1.11 - Scheme of model creation">
+        <h3>Stage 1: Requirement Analysis and Design</h3>
+        <p>Involves stating modeling goals, collecting data, building a conceptual model, and verifying its authenticity.</p>
 
-<script>
-    function openPopup(title, description) {
-        document.getElementById('popup-title').innerText = title;
-        document.getElementById('popup-description').innerText = description;
-        document.getElementById('popup').style.display = 'flex'; 
-    }
+        <h3>Stage 2: Model Development</h3>
+        <p>Selecting tools, developing a logical model, defining module properties, setting simulation time, and verifying the model.</p>
 
-    function closePopup() {
-        document.getElementById('popup').style.display = 'none'; 
-    }
-</script>
+        <h3>Stage 3: Experimentation</h3>
+        <p>Running simulations, varying parameters, collecting statistics, and analyzing results.</p>
+
+        <h3>Stage 4: Finalizing Results</h3>
+        <p>Evaluating work, comparing goals with results, and preparing a final report.</p>
+        <img src="fig1_12.png" alt="Fig. 1.12 - Mechanism of event-driven time advancement">
+        <img src="fig1_13.png" alt="Fig. 1.13 - Example of time-stepped simulation time advancement">
+    </section>
+</body>
+</html>
